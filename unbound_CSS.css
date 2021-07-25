@@ -1,0 +1,248 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+.sheet-grid-container-actions {
+  display: grid;
+  grid-template-columns: 12% 15% 72%;
+  grid-gap: 1px;
+  text-align:center;
+  width: 100%;
+}
+
+.sheet-grid-item1 {
+  background-color: rgba(255, 255, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 40px;
+  text-align:center;
+}
+.sheet-grid-item1a {
+  background-color: #FFFFFF;
+}
+.sheet-grid-item2 {
+  background-color: rgba(255, 255, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+.sheet-grid-item2a {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+}
+.sheet-grid-item3 {
+  background-color: rgba(255, 255, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+   font-size: 20px;
+   font-weight: bold;
+}
+.sheet-grid-item3a {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+ 
+}
+
+.sheet-grid-textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.sheet-grid-input{
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    text-align:center;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    value: 0;
+}
+
+.sheet-grid-container {
+  display: grid;
+  grid-template-columns: 100% ;
+  border: 2px solid #999999;
+  Height: 250px;
+  row-gap: 6px;
+}
+
+.sheet-grid-table {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  row-gap: 2px;
+}
+
+.sheet-item1
+{
+    white-space: nowrap;
+    border: 1px solid #999999;
+    background-color: #e7e7e7;
+}
+
+.sheet-item2
+{
+    white-space: nowrap;
+    border: 1px solid #999999;
+    background-color: #e7e7e7;
+}
+
+.sheet-item3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  Height: 90px;
+}
+
+textarea.sheet-textPower{
+    height: 90px;
+    box-sizing: border-box; 
+}
+
+textarea.sheet-textAdvance{
+    height: 50px;
+    box-sizing: border-box; 
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input.sheet-recharge{
+    height: 30px;
+    width: 30px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input.sheet-textfields {
+    width: 60%;
+    height: 12px;
+    float: right;
+}
+
+input.sheet-stamina {
+    width: 60px;
+    height: 80%;
+    font-size: 24px;
+    text-align: top;
+}
+
+input.sheet-prof{
+    display: table-cell;
+    width: 30px;
+    height: 14px;
+    float: left;
+}
+
+label.sheet-playerinfo {
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+    text-align: Left;
+    width: 70px;
+}
+
+textarea.sheet-boost{
+    resize: none;
+    width: 280px;
+    display: table-cell;
+    border: 1px solid #999999;
+    height: auto;
+    float: right;
+}
+
+textarea.sheet-foundation{
+    resize: none;
+    margin: 5px;
+    width: 90%;
+    height: 60px;
+}
+
+textarea.sheet-fates {
+    resize: none;
+    margin: 5px;
+    width: 90%;
+    height: 60px;
+}
+
+div.sheet-main {
+    width: 860px;
+    height: 1000px;
+    background: #FFFFFF;
+    background-image: url(https://github.com/BlueSully/UnboundRoll20Sheet/blob/master/Unbound_2e_Character_Sheet.png?raw=true);
+    background-size: 860px 600px; 
+    background-repeat: no-repeat;
+}
+
+div.sheet-info {
+    float: right;
+    width :76%;
+    height :24px;
+    margin: 1px;
+}
+
+div.sheet-foundation {
+    float: right;
+    width: 76%;
+    height: 100px;
+    margin-top: 30px; 
+}
+
+div.sheet-fate {
+    float: right;
+    width: 76%;
+    height: 100px;
+    margin-top: 10px; 
+}
+
+div.sheet-leftside {
+    width: 45%; 
+    height: 430px; 
+    float: left; 
+    margin: 5px;
+}
+
+div.sheet-rightside {
+    width: 50%; 
+    height: 530px;
+    float: right; 
+    margin: 5px;
+}
+
+div.sheet-stamina {
+    width: 95%;
+    height: 10%;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+div.sheet-first {
+    width: 45%;
+    height: 80%;
+    margin: 2px;
+    border: 4px solid black;
+    float: left;
+}
+
+div.sheet-second {
+    width: 45%;
+    height: 80%;
+    margin: 2px;
+    border: 4px solid black;
+    float: right;
+    overflow: hidden;
+}
